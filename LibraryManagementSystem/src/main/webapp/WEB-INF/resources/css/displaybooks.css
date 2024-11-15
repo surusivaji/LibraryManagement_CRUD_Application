@@ -1,0 +1,127 @@
+body {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: #F5F7F8;
+	font-family: sans-serif;
+	background-image: url('../images/librarybackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: blur(10px);
+}
+
+table {
+	animation-name: slide;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(1200px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+h1 {
+	text-align: center;
+	color: #FC2947;
+	font-size: 40px;
+	font-weight: 900;
+	text-shadow: 2px 2px black;
+	animation-name: slide;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+}
+
+table {
+	border-collapse: collapse;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #000;
+	border-radius: 5px;
+	cursor: grab;
+	animation-name: slide;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+}
+
+thead {
+	background: #071952;
+	color: white;
+}
+
+th {
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 18px;
+}
+
+td {
+	text-align: left;
+	padding: 8px;
+	font-size: 18px;
+	color: #0C0C0C;
+	font-weight: bold;
+}
+
+#update,
+#delete {
+	background: #65B741;
+	font-size: 17px;
+	color: #F3F7EC;
+	padding: 7px 14px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-weight: 600;
+	box-shadow: 2px 2px 2px black;
+	transition: all 0.2s;
+}
+
+#delete {
+	background: #FC4100;
+	color: #F3F7EC;
+}
+
+#delete:hover {
+	background: #E4003A;
+}
+
+#update:hover {
+	background: #399918;
+}
+
+#add {
+	padding: 8px 10px;
+	font-size: 25px;
+	border-radius: 10px;
+	background: #5D3891;
+	color: #F5F5F5;
+	cursor: pointer;
+	font-weight: 600;
+	outline: none;
+	border: none;
+	box-shadow: 5px 5px 5px black;
+	margin-left: 1300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: all 0.2s;
+	animation-name: slide;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+}
+
+#add:hover {
+	background: #A459D1;
+	color: #fff;
+}
